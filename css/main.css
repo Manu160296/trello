@@ -2,4 +2,81 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+}
+body{
+  background-image: url(../assets/images/fondo.jpg);
+  font-family: Helvetica, sans-serif;
+
+}
+
+/*header  styles */
+
+header {
+  padding:   4px  8px;
+  background: rgba(0,0,0,.35);
+  font-size: 14px;
+}
+header ul {
+/*  outline: 1px solid black; */
+  display: inline-block;
+  float: left;
+}
+header li {
+/*  outline: 1px solid green; */
+  background: rgba(255,255,255,.3);
+  border-radius: 5px;
+  color: #ffffff;
+  font-weight: 600;
+  list-style: none;
+  margin: 0 5px 0 0;
+  display: inline-block;
+  padding:6px;
+}
+
+header li a{
+  text-decoration: none;
+  color: black;
+}
+
+.icon{
+  color: #ffffff;
+  margin: 2px 2px;
+}
+
+input{
+/*  outline: 1px solid blue; */
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+ figure{
+   /*outline: 1px solid blue; */
+   display: inline-block;
+ }
+
+ figure img {
+/*   outline: 1px solid red; */
+   margin: 0 25vw;
+ }
+
+nav{
+  display: inline-block;
+/*  outline: 1px solid yellow; */
+  float: right;
+}
+
+nav li {
+/*  outline: 2px solid red ; */
+  background-color:rgba(255,255,255,.3);
+}
+
+.letter{
+  border-radius: 100%;
+  background-color: #CDD2D4;
+  padding: 7px 9px;
+}
+
+.letter-container{
+  background-color: transparent;
 }
