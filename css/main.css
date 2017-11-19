@@ -5,7 +5,7 @@
 
 }
 body{
-  background-image: url(../assets/images/fondo.jpg);
+/*  background-image: url(../assets/images/fondo.jpg);  */
   font-family: Helvetica, sans-serif;
 
 }
@@ -79,4 +79,58 @@ nav li {
 
 .letter-container{
   background-color: transparent;
+}
+
+/* styles of section board-menu*/
+
+.board-menu{
+/*  outline: 1px solid red; */
+  padding: 12px 10px;
+}
+
+.board-menu ul{
+/*  outline: 1px solid blue; */
+  display: inline-block;
+
+}
+
+.board-menu ul li{
+/*  outline: 1px solid green; */
+  display: inline-block;
+  font-size: 18px;
+  padding: 2px;
+  list-style: none;
+  margin: 5px;
+}
+.board-menu .privado {
+  font-size: 16px;
+}
+
+.show-menu{
+/*  outline: 1px solid purple; */
+  border-style: none;
+  background-color: transparent;
+  display: inline-block;
+  margin-left: 67vw;
+  height: 23px;
+  text-decoration: underline;
+}
+
+.board-menu ul li:hover , .show-menu:hover{
+  background: rgba(0,0,0,0.3);
+  cursor: pointer;
+}
+/*styles of events*/
+
+.add-list{
+  outline: 1px solid red;
+  display: inline-block;
+}
+
+.hide{
+  display: none;
+}
+
+.show-form{
+
 }
