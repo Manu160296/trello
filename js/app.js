@@ -60,6 +60,16 @@ function showForm(e) {
 
        function item (e) {
          console.log('agregar');
+    // creando elementos :
+    var containerTextArea = document.createElement('div');
+    var textArea = document.createElement('textarea');
+    var add = document.createElement('button');
+    add.textContent='Añadir';
+    textArea.value="hola";
+    // agregando hijos :
+    containerTextArea.appendChild(textArea);
+    containerTextArea.appendChild(add);
+    listContainer.replaceChild(containerTextArea,containerAddItem);
 
        }
 
