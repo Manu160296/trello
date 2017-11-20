@@ -24,6 +24,8 @@ function showForm(e) {
   form.appendChild(input);
   form.appendChild(addButton);
   form.appendChild(cancelButton);
+  //focus al input
+//  onFocus(input)
   //agregando atributos y detalles a los elementos creados:
   input.setAttribute('placeholder','añadir una lista');
   addButton.textContent = 'Guardar';
@@ -60,18 +62,43 @@ function showForm(e) {
 
        function item (e) {
          console.log('agregar');
+
     // creando elementos :
     var containerTextArea = document.createElement('div');
     var textArea = document.createElement('textarea');
     var add = document.createElement('button');
-    add.textContent='Añadir';
-    textArea.value="hola";
+  add.textContent='Añadir';
+
+    //textArea.value="hola";
     // agregando hijos :
     containerTextArea.appendChild(textArea);
     containerTextArea.appendChild(add);
     listContainer.replaceChild(containerTextArea,containerAddItem);
+    //textArea.focus();
+    onFocus(textArea)
 
+    add.addEventListener('click',save);
+    function save(e) {
+      //obteniendo el valor del textarea
+    var saveTextArea = textArea.value;
+    //creando elementos
+    var unknownList =  document.createElement('ul');
+    var listItem = document.createElement('li');
+    listItem.textContent= textArea.value;
+    textArea.value='';
+    onFocus(textArea)
+    //agregando elementos
+    unknownList.appendChild(listItem);
+    listContainer.insertBefore( unknownList, containerTextArea);
+
+    }
        }
 
+
+function onFocus(element) {
+return   element.focus();
+}
+
   }
+
 }
